@@ -1,0 +1,39 @@
+<resources>
+    <string name="app_name">Taller2</string>
+    <string name="nombre_splash">Juan Esteban Rojas</string>
+    <string name="textApp">JuanitoAlimaña</string>
+    <string name="textHome">Inicia una nueva aventura con JuanitoAlimaña y descubre una nueva forma de ver el mundo</string>
+    <string name="comienza">Comienza</string>
+    <string name="registrate">Regístrate</string>
+    <string name="text_login">"La aventura está por iniciar, por favor inicia sesión"</string>
+    <string name="Ingresar">Ingresar</string>
+    <string name="recuperarContraseña">Recupera tu contraseña</string>
+    <string name="textviweRegistro">Crea tu cuenta para comenzar la aventura con Juanito Alimaña</string>
+    <string name="campoNombreregistro">Nombre</string>
+    <string name="correoElectronicoCampo">Correo electrónico</string>
+    <string name="contrasenaCampo">Contraseña</string>
+    <string name="campoVerificarContraseña">Verificar contraseña</string>
+    <string name="campoTyC">Acepto términos y condiciones</string>
+    <string name="btnRegistrarse">Registrarse</string>
+    <string name="TextoCuentaRegister">¿Ya tienes cuenta?</string>
+    <string name="textIniciarSesion">Inicia sesión</string>
+    <string name="textLogin">La aventura está por iniciar, por favor inicia sesión</string>
+    <string name="campoLogin">Usuario</string>
+    <string name="campoContrasenaLogin">Contraseña</string>
+    <string name="BtnIngresaGoogle">Ingresa con Google</string>
+    <string name="nocuentaText">No tienes cuenta?</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="mi_tienda">Mi Tienda</string>
+    <string name="inicio">Inicio</string>
+    <string name="catalogo">Catalogo</string>
+    <string name="carrito">Carrito</string>
+    <string name="perfil">Perfil</string>
+
+
+    <string name="nav_open">Abrir menú</string>
+    <string name="nav_close">Cerrar menú</string>
+    <string name="el_carrito">El carrito</string>
+    <string name="el_home_papi">El home papi</string>
+    <string name="catalogo_mi_rey">Catalogo mi rey</string>
+    <string name="el_perfil_papi_edita_pues">El perfil papi, edita pues</string>
+</resources>

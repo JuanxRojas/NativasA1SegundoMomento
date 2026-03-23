@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/fondo"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:gravity="center">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+
+        <ImageView
+            android:id="@+id/logo_login"
+            android:layout_width="125dp"
+            android:layout_height="125dp"
+            android:src="@drawable/logo"/>
+
+        <TextView
+            android:id="@+id/tittle_login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:text="@string/textApp"
+            android:textColor="@color/white"
+            android:textSize="30sp"
+            android:textStyle="bold"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/text_login"
+        android:layout_width="284dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/tiro_devanagari_hindi"
+        android:text="@string/textLogin"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="19sp"
+        android:textStyle="italic" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/iconos_login"
+            android:layout_width="87dp"
+            android:layout_height="121dp"
+            android:src="@drawable/icons"/>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:layout_marginStart="10dp">
+
+            <EditText
+                android:id="@+id/text_usuario"
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:background="@drawable/style_button_white"
+                android:paddingStart="10dp"
+                android:inputType="text"
+                android:hint="@string/campoLogin"/>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                app:endIconMode="password_toggle"
+                app:hintEnabled="false">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/Password_login"
+                    android:layout_width="match_parent"
+                    android:layout_height="52dp"
+                    android:background="@drawable/style_button_white"
+                    android:paddingStart="10dp"
+                    android:hint="@string/campoContrasenaLogin"
+                    android:inputType="textPassword"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_ingresar"
+        android:layout_width="250dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="30dp"
+        android:layout_gravity="center"
+        android:backgroundTint="@color/white"
+        android:fontFamily="@font/tiro_devanagari_hindi"
+        android:text="@string/Ingresar"
+        android:textColor="@color/red"
+        android:textSize="35sp"/>
+
+    <Button
+        android:id="@+id/btn_recuperarContraseña"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:backgroundTint="@color/transparent"
+        android:fontFamily="@font/tiro_devanagari_hindi"
+        android:text="@string/recuperarContraseña"
+        android:textColor="@color/white"
+        android:textSize="23sp"
+        android:layout_marginBottom="30dp"/>
+
+
+    <LinearLayout
+        android:id="@+id/btn_google"
+        android:layout_width="match_parent"
+        android:layout_height="62dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/style_button_google"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:paddingHorizontal="20dp">
+
+        <ImageView
+            android:layout_width="51dp"
+            android:layout_height="52dp"
+            android:src="@drawable/google"
+            android:layout_marginRight="20dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:fontFamily="@font/tiro_devanagari_hindi"
+            android:text="@string/BtnIngresaGoogle"
+            android:textColor="@color/black"
+            android:textSize="22sp" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/text_sinCuenta"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/tiro_devanagari_hindi"
+            android:text="@string/nocuentaText"
+            android:textColor="@color/black"
+            android:textSize="21sp"/>
+
+        <Button
+            android:id="@+id/text_noCuenta"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@android:color/transparent"
+            android:fontFamily="@font/tiro_devanagari_hindi"
+            android:text="@string/registrate"
+            android:textColor="@color/white"
+            android:textSize="21sp"/>
+    </LinearLayout>
+
+</LinearLayout>
