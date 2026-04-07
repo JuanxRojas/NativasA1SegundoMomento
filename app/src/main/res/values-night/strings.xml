@@ -36,4 +36,7 @@
     <string name="el_home_papi">El home papi</string>
     <string name="catalogo_mi_rey">Catalogo mi rey</string>
     <string name="el_perfil_papi_edita_pues">El perfil papi, edita pues</string>
+    <string name="productos_destacados">Productos destacados</string>
+    <string name="imagen_del_producto">Imagen del producto</string>
+    <string name="agregar_al_carrito">Agregar al carrito</string>
 </resources>

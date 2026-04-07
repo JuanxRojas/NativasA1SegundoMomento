@@ -26,11 +26,11 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
+        val toolbar = findViewById<androidx.appcompat.widget.Toolbar>(R.id.toolbar)
 
         drawerLayout = findViewById(R.id.drawer_layout)
         bottomNav = findViewById(R.id.bottom_nav)
         navView = findViewById(R.id.nav_view)
-        val toolbar = findViewById<androidx.appcompat.widget.Toolbar>(R.id.toolbar)
 
 
         setSupportActionBar(toolbar)
