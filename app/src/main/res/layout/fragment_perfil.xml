@@ -1,14 +1,141 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main_editar_perfil"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.main.perfil.PerfilFragment">
+    android:background="@color/fondo"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="20dp">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/el_perfil_papi_edita_pues" />
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
 
-</FrameLayout>
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/logo"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:text="@string/textApp"
+            android:textColor="@color/white"
+            android:textSize="30sp"
+            android:textStyle="bold"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="320dp"
+        android:layout_height="49dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/editar_perfil"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:textStyle="italic"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="25dp"
+                android:gravity="center">
+
+                <EditText
+                    android:id="@+id/input_editar_nombres"
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:background="@drawable/style_button_white"
+                    android:hint="@string/nombres"
+                    android:paddingStart="12dp"/>
+
+                <EditText
+                    android:id="@+id/input_editar_apellidos"
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:layout_marginTop="15dp"
+                    android:background="@drawable/style_button_white"
+                    android:hint="@string/apellidos"
+                    android:paddingStart="12dp"/>
+
+                <EditText
+                    android:id="@+id/input_editar_correo"
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:layout_marginTop="15dp"
+                    android:background="@drawable/style_button_white"
+                    android:hint="@string/correo_electr_nico"
+                    android:inputType="textEmailAddress"
+                    android:paddingStart="12dp"/>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    app:endIconMode="password_toggle"
+                    app:hintEnabled="false">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/input_editar_password"
+                        android:layout_width="match_parent"
+                        android:layout_height="55dp"
+                        android:background="@drawable/style_button_white"
+                        android:hint="@string/nueva_contrase_a"
+                        android:inputType="textPassword"
+                        android:paddingStart="12dp"/>
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    app:endIconMode="password_toggle"
+                    app:hintEnabled="false">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/input_editar_verificar_password"
+                        android:layout_width="match_parent"
+                        android:layout_height="55dp"
+                        android:background="@drawable/style_button_white"
+                        android:hint="@string/verificar_nueva_contrase_a"
+                        android:inputType="textPassword"
+                        android:paddingStart="12dp"/>
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btn_guardar_perfil"
+                android:layout_width="250dp"
+                android:layout_height="70dp"
+                android:layout_marginTop="30dp"
+                android:layout_gravity="center"
+                android:backgroundTint="@color/white"
+                android:text="@string/guardar"
+                android:textColor="@color/red"
+                android:textSize="32sp"/>
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
