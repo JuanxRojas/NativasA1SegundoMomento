@@ -102,7 +102,7 @@
         android:layout_gravity="center"
         android:backgroundTint="@color/white"
         android:fontFamily="@font/tiro_devanagari_hindi"
-        android:text="@string/Ingresar"
+        android:text="Ingresa"
         android:textColor="@color/red"
         android:textSize="35sp"/>
 
@@ -116,7 +116,20 @@
         android:text="@string/recuperarContraseña"
         android:textColor="@color/white"
         android:textSize="23sp"
-        android:layout_marginBottom="30dp"/>
+        android:layout_marginBottom="3dp"/>
+    <TextView
+        android:id="@+id/ingresar_huella"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="0dp"
+        android:backgroundTint="@color/transparent"
+        android:fontFamily="@font/tiro_devanagari_hindi"
+        android:text="@string/ingresar_con_huella"
+        android:textColor="@color/white"
+        android:textSize="23sp" />
+
+
 
 
     <LinearLayout

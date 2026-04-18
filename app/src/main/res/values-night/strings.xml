@@ -19,7 +19,7 @@
     <string name="TextoCuentaRegister">¿Ya tienes cuenta?</string>
     <string name="textIniciarSesion">Inicia sesión</string>
     <string name="textLogin">La aventura está por iniciar, por favor inicia sesión</string>
-    <string name="campoLogin">Usuario</string>
+    <string name="campoLogin">Usuario o Correo</string>
     <string name="campoContrasenaLogin">Contraseña</string>
     <string name="BtnIngresaGoogle">Ingresa con Google</string>
     <string name="nocuentaText">No tienes cuenta?</string>
@@ -45,4 +45,5 @@
     <string name="apellidos">Apellidos</string>
     <string name="nombres">Nombres</string>
     <string name="editar_perfil">Editar Perfil</string>
+    <string name="ingresar_con_huella">Ingresar con Huella</string>
 </resources>
